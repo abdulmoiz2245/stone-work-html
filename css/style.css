@@ -314,6 +314,9 @@ header.header-style-two .bottom-header .social-icon li a:hover,.theme-main-menu 
   border-style: solid;
 }
 /*===================== Theme Header =================*/
+.logo img{
+  height: 150px;
+}
 header {
   position: relative;
 }
@@ -1654,6 +1657,16 @@ footer .bottom-footer p a {
 .theme-large-asidebar .top-details {
   margin-bottom: 30px;
 }
+
+.service-details-content .tab-content {
+  width: 100%;
+  display: none;
+}
+
+.service-details-content .tab-content.active {
+  display: block;
+}
+
 .service-details-content .middle-details {
   margin: 30px 0 30px 0;
 }

@@ -1,11 +1,4 @@
-//  Theme Custom jquery file, 
 
-      // Created on   : 23/03/2017. 
-      // Theme Name   : 7factory.
-      // Description  : 7factory- Responsive industry/factory template.
-      // Version      : 1.0.
-      // Author       : @TheMazine.
-      // Developed by : Jubayer al hasan. (jubayer.hasan1991@gmail.com)
 
 
 "use strict";
@@ -268,7 +261,31 @@ function teamSlider () {
                 items:1
             },
             600:{
-                items:2
+                items:3
+            }
+        }
+    })
+  }
+}
+
+function teamSlider2 () {
+  var tSlider = $(".team-slider2");
+  if(tSlider.length) {
+    tSlider.owlCarousel({
+        loop:true,
+        nav:false,
+        dots:true,
+        lazyLoad:true,
+        autoplay:true,
+        autoplayTimeout:8000,
+        autoplaySpeed:900,
+        dragEndSpeed:1000,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:10
             }
         }
     })
@@ -447,6 +464,8 @@ jQuery(document).on('ready', function() {
      projectSlider ();
      testimonialSlider ();
      teamSlider ();
+     teamSlider2 ();
+
      blogSlider ();
      mixitupGallery ();
      scrollToTop ();
